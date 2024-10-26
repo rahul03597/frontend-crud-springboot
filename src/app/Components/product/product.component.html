@@ -33,10 +33,10 @@
       <td>{{ product.price > 1000 ? "Expensive" : "Affordable" }}</td>
       <td>
         <button (click)="viewProduct(product)">View</button>
-        <!-- <button (click)="editProduct(product)">Edit</button> -->
-        <button [routerLink]="'/add/' + product.id">Update Product</button>
-        <!-- <button (click)="delete(product._id)">Delete</button> -->
-        <button (click)="delete(product.id)">Delete</button>
+
+        <button [routerLink]="'/add/' + product._id">Update Product</button>
+
+        <button (click)="delete(product._id)">Delete</button>
       </td>
     </tr>
   </tbody>
